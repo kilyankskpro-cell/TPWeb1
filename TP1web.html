@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Votre Nom">
+    <title>TP1 - Test de toutes les balises du cours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bienvenue TPD1 - TP1 réaliser par kilyan kisoka</h1>
+    <h2>J'adore le HTML </h2>
+    <h3>page de test </h3>
+    <h4>Jaime git hub</h4>
+    <h5>Détail sur ce test</h5>
+    <h6>Notes minuscules </h6>
+    <p>Coucou ici mon premier paragraphe. Ce texte permet de tester le rendu par défaut de la balise p et il est mis en évidence.</p>
+    <div>
+        <p>Ceci est un paragraphe à l'intérieur d'un bloc conteneur générique <strong>&lt;div&gt;</strong>. À l'intérieur, nous utilisons une balise <span style="color: blue; font-weight: bold;">&lt;span&gt;</span> pour colorer ce texte spécifique en bleu.</p>
+    </div>
+    <p>Lien vers la plateforme de rendu : <a href="https://github.com" target="_blank">Accéder à GitHub</a>.</p>
+    <h3>Test image https://s.yimg.com/zb/imgv1/6c9b6e55-993d-3772-aeef-ce3f697cf215/t_500x300 :</h3>
+    <img src="https://placeholder.com" alt="Image de test pour le TP1">
+    <h3>Test de liste non ordonnée (&lt;ul&gt;) :</h3>
+    <ul>
+        <li>Premier élément à puce</li>
+        <li>Deuxième élément à puce</li>
+    </ul>
+    <h3>Test de liste ordonnée (&lt;ol&gt;) :</h3>
+    <ol>
+        <li>Première étape du TP</li>
+        <li>Deuxième étape du TP</li>
+    </ol>
+   
+    <h3>Test de Tableau (&lt;table&gt;) :</h3>
+    <table border="1">
+        <tr>
+            <th>Balise (th)</th>
+            <th>Type (th)</th>
+            <th>Rendu Visuel (th)</th>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt; (td)</td>
+            <td>Titre (td)</td>
+            <td>Gros et gras (td)</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt; (td)</td>
+            <td>Texte (td)</td>
+            <td>Normal avec saut de ligne (td)</td>
+        </tr>
+    </table>
+    <p>-->
+    <p id="moyenne"></p>
+    <script>
+        const notes = [14, 18, 12, 16, 9];
+        let somme = 0;
+
+        for (let i = 0; i < notes.length; i++) {
+            somme += notes[i];
+        }
+
+        const moyenne = somme / notes.length;
+        document.getElementById("moyenne").textContent = `Moyenne : ${moyenne}`;
+    </script>
+
+</body>
+</html>
